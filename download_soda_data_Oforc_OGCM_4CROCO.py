@@ -53,13 +53,13 @@ def main():
 
     if data_type == "monthly":
         for YEAR in range(YEAR_START, YEAR_END + 1):
-            download_monthly_data(YEAR, OUTDIR, data_type).nc
+            download_monthly_data(YEAR, OUTDIR, data_type)
     elif data_type == "5daily":
         for YEAR in range(YEAR_START, YEAR_END + 1):
             mstart = MONTH_START if YEAR != YEAR_START else 1
             mend = MONTH_END if YEAR != YEAR_END else 12
             for MONTH in range(mstart, mend + 1):
-                download_5daily_data(YEAR, MONTH, OUTDIR, data_type).nc
+                download_5daily_data(YEAR, MONTH, OUTDIR, data_type)
 
     print("Data downloaded successfully to:", OUTDIR)
 
