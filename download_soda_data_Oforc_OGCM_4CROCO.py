@@ -1,6 +1,11 @@
 # developed by Subhadeep Maishal
 # Indian Institute of Technology, Kharagpur
 # subhadeepmaishal@kgpian.iitkgp.ac.in
+# for more about SODA data visit (https://www2.atmos.umd.edu/%7Eocean/index_files/soda3.15.2_mn_download_b.htm)
+# duration of avail 1980-2021+
+# about CROCO and CROCO tools visit: https://www.croco-ocean.org/
+# Install argparse (if not already installed)
+#pip install argparse
 import os
 import argparse
 import subprocess
